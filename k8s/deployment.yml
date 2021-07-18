@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sre-asst
+spec:
+  selector:
+    matchLabels:
+      app: sre-asst
+  replicas: 1
+  template:
+    metadata:
+      name: ecosia-sre-asst
+      labels:
+        app: sre-asst
+    spec:
+      containers:
+        - name: ecosia-sre-asst
+          image: ecosia/sre-asst:v1.0
+          imagePullPolicy: Never
