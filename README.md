@@ -2,6 +2,13 @@
 
 This is my attempt to satisfy the requirements of the Lead SRE assignment for Ecosia. 
 
+### Execute Shell Script
+1. Clone this repository and change directory into it
+2. Grant the build.sh script execute permissions (`chmod +x build.sh`)
+3. Execute the script on a machine with minikube installed: `./build.sh`
+
+### Overview
+
 The following is an overview of the various components:
 - **server.js**: A web server written in node.js 
     - Requires the HTTP function and establishes a conditional to respond to /tree
