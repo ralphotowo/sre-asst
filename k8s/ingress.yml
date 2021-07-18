@@ -4,9 +4,10 @@ metadata:
   name: http-ingress
 spec:
   rules:
-  - http:
+  - host: local.ecosia.org
+    http:
       paths:
-      - path: /
+      - path: /tree
         backend:
           serviceName: ecosia-svc
-          servicePort: 80
+          servicePort: 8080
