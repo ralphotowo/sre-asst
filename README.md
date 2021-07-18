@@ -25,4 +25,4 @@ The following is an overview of the various components:
     - Builds the docker image and tags it
     - Applies the relevant manifest files under the k8s's directory. 
 
-Note: This implementation exposes the node app using both a service and an ingress. Following successful execution of the script, an IP address will be returned which can be used to view the JSON output immmediately. A local DNS map has to be established at /etc/hosts using the IP address returned from `kubectl get ingress`
+**Note**: This implementation exposes the node app using both a service and an ingress. Following successful execution of the script, an IP address will be returned which can be used to view the JSON output immmediately. A local DNS map has to be established at /etc/hosts using the IP address returned from `kubectl get ingress`
