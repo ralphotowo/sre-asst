@@ -9,11 +9,11 @@ The following is an overview of the various components:
     - Requires the HTTP function and establishes a conditional to respond to /tree
     - Sets the application header to application/json
     - Responds to a GET query at /tree with the requested JSON output
-- **Dockerfile**: Responsible for building the image
+- **Dockerfile**: Image build instruction
     - Copies server.js into the work directory
     - Creates and switches to a node user
     - Installs dumb-init to act as an init process to handle `SIGTERM` and `SIGKILL` signals
-- **build.sh**: Responsible for building the image
+- **build.sh**: Build & deploy image, service, ingress
     - Locates required binaries and maps them to variables
     - Ensures minikube is running on the local workstatation
     - Initializes the minikube docker-env to ensure built images are stored within the Minikube VM
