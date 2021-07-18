@@ -1,4 +1,4 @@
-# Ecosia: Site Reliability Engineering Assessment
+# Ecosia: Site Reliability Engineering Assignment
 
 This is my attempt to satisfy the requirements of the Lead SRE assignment for Ecosia. 
 
