@@ -25,4 +25,3 @@ The following is an overview of the various components:
     - Builds the docker image and tags it
     - Applies the relevant manifest files under the k8s's directory. 
 
-NOTE: The ingress add-on wasn't used.
